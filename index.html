@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ankush - Full Stack Developer</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- email.js-------------------------------------------------------------------- -->
+      <script type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <script type="text/javascript">
+         (function(){
+            emailjs.init({
+              publicKey: "jVzA29SEHm-QrszL4",
+            });
+         })();
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script defer src="script.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+      <link rel="icon" href="669ad813acda9dbf495f2f611e97deec.jpg">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <body>
+      <header id="scrolled_" class="scrolled">
+         <div class="logo">
+            <a href="#hero-banner">ANKUSH</a>
+         </div>
+         <nav id="nav-menu">
+            <a href="#project_section">Projects</a>
+            <a href="#skill_section">Skill</a>
+            <a href="#education_section">Education</a>
+            <a href="#contact_section">Contact</a>
+         </nav>
+         <div class="header-actions">
+            <button class="icon-btn theme-toggle" id="theme-toggle">
+            <i class="fa-regular fa-moon"></i>
+            </button>
+            <button class="icon-btn menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+         </div>
+      </header>
+      <!-- Hero-banner ----------------------------------------------------------------------------------------------------------->
+      <div class="hero-banner" id="hero-banner">
+         <div class="overlay-gradient"></div>
+         <div class="stars"></div>
+         <div class="shooting-star"></div>
+         <div class="shooting-star"></div>
+         <div class="shooting-star"></div>
+         <div class="shooting-star"></div>
+         <div class="shooting-star"></div>
+         <div class="shooting-star"></div>
+         <div class="shooting-star"></div>
+         <div class="shooting-star"></div>
+      </div>
+      <!-- main-section ---------------------------------------------------------------------------------------------------------->
+      <main class="container">
+         <div class="profile-section">
+            <div class="profile-pic-wrapper">
+               <img src="669ad813acda9dbf495f2f611e97deec.jpg" alt="Profile" class="profile-img">
+            </div>
+         </div>
+         <div class="hero-content">
+            <h1>Hi, I'm Ankush —<span class="line">A Full Stack web developer.</span></h1>
+            <p class="bio">
+               I am a Full Stack Developer turning ideas into real products. I build robust backends with <span class="highlight">Express.js, PHP, and MYsql</span>, paired with interactive, responsive frontends that bring data to life. I care about clear UX, clean code, and shipping fast—ensuring that from the database to the pixel, everything feels good to use and easy to grow."
+            </p>
+            <div class="action-row">
+               <div class="Cta">
+                  <a href="/assets/New Text Document.pdf" type="button" download="My_CV" class="btn con-button">
+                  </i>Get Resume
+                  </a>
+                  <a type="button" href="#contact_section" class=" btn con-button">Contact Me
+                  </a>
+               </div>
+               <div class="socials">
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="https://github.com/dashboard"><i class="fa-brands fa-github"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-regular fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!-- Skill-section --------------------------------------------------------------------------------------------------------------------------------->
+      <div data-aos="fade-right"  data-aos-duration="2000" class="skill-section" id="skill_section">
+         <div class="skill-contain">
+            <section class="skills-accordion-section">
+               <h2 class="section-title">
+                  <span class="red-arrow"><i class="fa-solid fa-location-arrow fa-rotate-by" style="color: #74C0FC; --fa-rotate-angle: 50deg;"></i></span> Technical Skills
+                  <!-- <span class="red-arrow">&gt;</span> Technical Skills -->
+               </h2>
+               <div class="accordion-container">
+                  <div class="skills-container">
+                     <div class="skill-card">
+                        <div class="skill-info">
+                           <i class="fa-brands fa-html5 fa-fade" style="color:#f54927"></i>
+                           <span>Html</span>
+                           <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                     </div>
+                     <div class="skill-card">
+                        <div class="skill-info">
+                           <i class="fa-brands fa-css3 fa-fade" style="color: #2196f3;"></i>
+                           <span>Css</span>
+                           <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                     </div>
+                     <div class="skill-card">
+                        <div class="skill-info">
+                           <i class="fa-brands fa-js fa-fade" style="color: #efd81d;"></i>
+                           <span>JavaScript</span>
+                           <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                     </div>
+                     <div class="skill-card">
+                        <div class="skill-info">
+                           <i class="fa-brands fa-php fa-fade" style="color: #7377ad;"></i>
+                           <span>php</span>
+                           <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                     </div>
+                     <div class="skill-card">
+                        <div class="skill-info">
+                           <i class="fa-solid fa-database fa-fade" style="color: #2e76ce;"></i>
+                           <span>SQL</span>
+                           <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                     </div>
+                     <div class="skill-card">
+                        <div class="skill-info">
+                           <i class="fa-brands fa-react fa-fade" style="color: #61DAFB;"></i>
+                           <span>React js</span>
+                           <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                     </div>
+                     <div class="skill-card">
+                        <div class="skill-info">
+                           <i class="fa-brands fa-figma fa-fade"></i>
+                           <span>Figma</span>
+                           <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                     </div>
+                     <div class="skill-card">
+                        <div class="skill-info">
+                           <i class="fa-brands fa-node-js fa-fade" style="color: #4caf50;"></i>
+                           <span>Node js</span>
+                           <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                     </div>
+                     <div class="skill-card">
+                        <div class="skill-info">
+                           <i class="fa-brands fa-bootstrap fa-fade" style="color: #8612f3;"></i>
+                           <span>bootstrap</span>
+                           <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+         </section>
+      </div>
+      </div>
+      <!-- Project-section ----------------------------------------------------------------------------------------------------------------------->
+      <div data-aos="zoom-in"  data-aos-duration="3000" class="project-section" id="project_section">
+         <div class="project-contain">
+            <div class="section-head">
+               <h2><span class="red-arrow"><i class="fa-solid fa-location-arrow fa-rotate-by" style="color: #74C0FC; --fa-rotate-angle: 50deg;"></i></span> Project</h2>
+            </div>
+            <div class="project-grid">
+               <div class="project-card" >
+                  <div class="card-image">
+                     <img src="assets/home_page.jpg" alt="Project Screenshot">
+                     <a href=" https://aa-ankush.github.io/quiz-game/" target="_blank" class="visit-site-overlay">
+                     <span>Visit Site</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                     </a>
+                     <div class="gradient-bar top"></div>
+                     <div class="gradient-bar bottom"></div>
+                  </div>
+                  <div class="card-content">
+                     <div class="card-header">
+                        <h3>Quiz Craft</h3>
+                        <div class="header-links">
+                           <a href="https://github.com/aa-ankush/quiz-game" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                     </div>
+                     <p class="description">
+                        A dynamic platform allowing users to create, customize, and play interactive quizzes with real-time scoring and user authentication.
+                     </p>
+                     <div class="tech-stack">
+                        <span class="tag"><i class="fa-brands fa-js fa-fade" style="color: #efd81d;"></i> JavaScript</span>
+                        <span class="tag"><i class="fa-brands fa-css3 fa-fade" style="color: #2196f3;"></i> Css</span>
+                        <span class="tag"><i class="fa-brands fa-html5 fa-fade" style="color:#f54927"></i> Html</span>
+                     </div>
+                     <a href="#" class="view-btn">
+                     View Details <i class="fa-solid fa-arrow-right"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <div class="card-image ">
+                     <img src="assets/Image.png" style="width:350px" alt="Project Screenshot">
+                     <a href=" https://aa-ankush.github.io/e-commerce-web/" target="_blank" class="visit-site-overlay">
+                     <span>Visit Site</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                     </a>
+                     <div class="gradient-bar top"></div>
+                     <div class="gradient-bar bottom"></div>
+                  </div>
+                  <div class="card-content">
+                     <div class="card-header">
+                        <h3>E-Commerce website</h3>
+                        <div class="header-links">
+                           <a href="https://github.com/aa-ankush/ecommerce-website" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                     </div>
+                     <p class="description">
+                        A E-commerce website  allowing users to create, customize, and play interactive quizzes with real-time scoring and user authentication.
+                     </p>
+                     <div class="tech-stack">
+                        <span class="tag"><i class="fa-brands fa-js fa-fade" style="color: #efd81d;"></i> JavaScript</span>
+                        <span class="tag"><i class="fa-brands fa-css3 fa-fade" style="color: #2196f3;"></i> Css</span>
+                        <span class="tag"><i class="fa-brands fa-html5 fa-fade" style="color:#f54927"></i> Html</span>
+                     </div>
+                     <a href="#" class="view-btn">
+                     View Details <i class="fa-solid fa-arrow-right"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Educaton-section ----------------------------------------------------------------------------------------------------------------------->
+      <div  data-aos="fade-up"
+     data-aos-duration="3000" class="education-section" id="education_section">
+         <section class="education-contain">
+            <h2 class="section-title">
+               <span class="red-arrow"><i class="fa-solid fa-location-arrow fa-rotate-by" style="color: #74C0FC; --fa-rotate-angle: 50deg;"></i></span> Education
+            </h2>
+            <div class="timeline">
+               <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2024 - 2025</div>
+                  <div class="timeline-content">
+                     <h3>Advanced Certification in Graphics & Web Development</h3>
+                     <h4>Arena Animation</h4>
+                     <p>>Mastered visual design principles, UI/UX workflows, and front-end development. Specialized in creating responsive web layouts and high-fidelity graphic assets.</p>
+                     <span class="grade-pill">Professional Certification</span>
+                  </div>
+               </div>
+               <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2021 - 2023</div>
+                  <div class="timeline-content">
+                     <h3>Bachelor of Commerce</h3>
+                     <h4>school of open learning</h4>
+                     <p>Specialized in Full Stack Development. graduated with a CGPA of 8.5.</p>
+                     <span class="grade-pill">CGPA: 8.5/10</span>
+                  </div>
+               </div>
+               <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2019 - 2020</div>
+                  <div class="timeline-content">
+                     <h3>Higher Secondary (12th)</h3>
+                     <h4>Sarvodya Bal Vidyalaya</h4>
+                     <p>Focused on Economics, and Mathematics (PCM).</p>
+                     <span class="grade-pill">Grade: 72%</span>
+                  </div>
+               </div>
+               <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2017-2018</div>
+                  <div class="timeline-content">
+                     <h3>Secondary School (10th)</h3>
+                     <h4>Sarvodya Bal Vidyalaya</h4>
+                     <p>Completed foundational studies with distinction.</p>
+                     <span class="grade-pill">Grade: 74%</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- contact-section ------------------------------------------------------------------------------------------------------------->
+      <div data-aos="fade-right"  data-aos-duration="3000" class="contact-section" id="contact_section">
+         <div class="contact-contain">
+            <h2 class="section-title">
+               <span class="red-arrow"><i class="fa-solid fa-location-arrow fa-rotate-by" style="color: #74C0FC; --fa-rotate-angle: 50deg;"></i></span> Contact
+            </h2>
+            <div class="contact-grid">
+               <div class="contact-left">
+                  <a href="mailto:singhankush75875@gmail.com" class="contact-pill" id="contact-pill">
+      <div class="pill-icon email"><i class="fa-regular fa-envelope"></i></div>
+      <div class="pill-text">
+         <span class="label">Email Me</span>
+         <span class="value">singhankush75875@gmail.com</span>
+      </div>
+   </a>
+
+   <a href="https://in.linkedin.com/" target="_blank" class="contact-pill" id="contact-pill">
+      <div class="pill-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+      <div class="pill-text">
+         <span class="label">LinkedIn</span>
+         <span class="value">Connect with me</span>
+      </div>
+   </a>
+   
+   <a href="https://github.com/aa-ankush" target="_blank" class="contact-pill" id="contact-pill">
+      <div class="pill-icon github"><i class="fa-brands fa-github"></i></div>
+      <div class="pill-text">
+         <span class="label">GitHub</span>
+         <span class="value">View my projects</span>
+      </div>
+   </a>
+               </div>
+               <div class="contact-right">
+                  <form class="contact-form" id="contact-form">
+                     <div class="form-row">
+                        <div class="form-group">
+                           <label for="name">Name</label>
+                           <input type="text" id="name" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                           <label for="email">Email</label>
+                           <input type="email" id="email" name="email" placeholder="your Email">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="6" name="message" placeholder="Tell me about your project..."></textarea>
+                     </div>
+                     <button type="submit" class="submit-btn" id="submit-btn" >
+                     Submit
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer-section ------------------------------------------------------------------------------------------------->
+      <div class="footer-section" id="footer_section">
+         <div class="footer-contain">
+            <div class="footer-socials">
+               <a href="#" target="_blank">
+               <i class="fa-brands fa-x-twitter"></i>twitter
+               </a>
+               <a href="#" target="_blank">
+               <i class="fa-brands fa-github"></i> GitHub
+               </a>
+               <a href="#" target="_blank">
+               <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+               </a>
+            </div>
+            <p class="designer-credit">
+               Designed and developed by <span class="name-highlight">Ankush</span>
+            </p>
+         </div>
+      </div>
+      <!-- floating-button ---------------------------------------------------------------------------------------------------->
+      <a href="#" id="floatingBackToTop" class="floating-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+      </a>
+
+      <script>
+        AOS.init();
+      </script>
+   </body>
+</html>
