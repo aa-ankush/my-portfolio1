@@ -124,3 +124,23 @@ window.addEventListener('scroll', () => {
 
 
 
+const showMoreBtn = document.getElementById('show-more-btn');
+const hiddenCards = document.querySelectorAll('.hidden-project');
+
+showMoreBtn.addEventListener('click', function () {
+    const isExpanding = this.innerText === "Show More Projects";
+
+    hiddenCards.forEach(card => {
+        if (isExpanding) {
+            card.classList.add('is-visible');
+        } else {
+            card.classList.remove('is-visible');
+        }
+    });
+
+    this.innerText = isExpanding ? "Show Less" : "Show More Projects";
+
+    if (!isExpanding) {
+        document.getElementById('project_section').scrollIntoView({ behavior: 'smooth' });
+    }
+});

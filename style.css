@@ -16,6 +16,7 @@
   --dot-color: #393737;
   --accent-pink: #ec4899;
   --accent-blue: #3b82f6;
+  --blue: #74C0FC;
   --btn-light: #e5e5e5;
   --text-white: #ffffff;
 } /* Font Settings */
@@ -1008,14 +1009,17 @@ skill---section */
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: linear-gradient(45deg, var(--accent-pink), var(--accent-blue));
-  box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
+  /* background: linear-gradient(45deg, var(--accent-pink), var(--accent-blue)); */
+  background: linear-gradient(45deg, var(--blue), var(--accent-blue));
+  /* box-shadow: 0 0 10px rgba(236, 72, 153, 0.5); */
+  box-shadow: 0 0 10px var(--blue);
 }
 
 /* Date Text */
 .timeline-date {
   font-size: 0.85rem;
-  color: var(--accent-pink);
+  /* color: var(--accent-pink); */
+  color: var(--text-primary);
   font-weight: 600;
   margin-bottom: 8px;
   display: inline-block;
@@ -1317,7 +1321,8 @@ skill---section */
   height: 50px;
 
   /* Theme Colors */
-  background: var(--accent-blue, #3b82f6);
+  /* background: var(--accent-blue, #3b82f6); */
+  background-color: #762ee8;
   color: #fff;
 
   border-radius: 50%; /* Makes it circular */
@@ -1338,7 +1343,7 @@ skill---section */
 
 /* Hover Effect */
 .floating-btn:hover {
-  background: var(--accent-pink, #ec4899);
+  /* background: var(--accent-pink, #ec4899); */
   transform: translateY(-5px); /* Moves up slightly on hover */
 }
 
@@ -1409,7 +1414,7 @@ skill---section */
 .progress-line span {
   display: block;
   height: 100%;
-  background: #00d2ff; /* Change this to match your accent color */
+  background: var(--blue); /* Change this to match your accent color */
   border-radius: 2px;
   transition: width 1s ease-in-out;
 }
@@ -1523,13 +1528,14 @@ header.down {
 }
 
 #contact-pill:hover {
-  border-color: var(--accent-blue);
+  border-color: var(--accent);
   text-shadow: none;
 }
 
 .pill-icon {
   font-size: 1.5rem;
-  color: var(--accent-blue);
+  /* color: var(--accent-blue); */
+  color: var(--blue);
   width: 40px;
   display: flex;
   justify-content: center;
@@ -1555,3 +1561,34 @@ header.down {
 
 
 
+.project-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to move to the next line instead of squishing */
+    gap: 3.6rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-card {
+    flex: 0 0 350px; /* Forces every card to stay 350px wide, no shrinking */
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Updated hidden state that doesn't break the layout */
+.hidden-project {
+    display: none; 
+}
+
+/* Use a separate class for the "visible" state */
+.project-card.is-visible {
+    display: flex;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
